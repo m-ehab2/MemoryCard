@@ -1,0 +1,47 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    font-family: 'Raleway';
+}
+.Footer{
+    font-family: 'Raleway';
+    background-color: var(--secondary);
+    padding: 5px 10px;
+    text-align: center;
+}
+.score{
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+    font-family: 'Assistant';
+}
+@media only screen and (max-width: 600px) {
+    .Header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--secondary);
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        font-family: 'Raleway';
+        font-size: 15px;
+        gap: 5px;
+    }
+    .score{
+        display: flex;
+        gap: 10px;
+        margin-right: 10px;
+        font-family: 'Assistant';
+    }
+  }

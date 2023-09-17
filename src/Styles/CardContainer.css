@@ -1,0 +1,77 @@
+.CardCon{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 15px;*/
+    width: 90%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    align-self: center;
+    overflow:auto;
+    margin-top: 10px;
+}
+.Card{
+    margin: 10px;
+    box-sizing: border-box;
+    justify-self: center;
+    cursor: pointer;
+    will-change: transform;
+}
+.Card>img{
+    width: 150px;
+    height: 150px;
+}
+.Card>p{
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    font-family: 'Assistant';
+}
+
+.Card::before,
+.Card::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-color: var(--accent);
+  transition: all 250ms ease-in-out;
+}
+
+.Card::before {
+  width: 3px;
+  height: 150px;
+  box-shadow: 150px 0 var(--accent);
+}
+
+.Card::after {
+  height: 3px;
+  width: 150px;
+  box-shadow: 0 150px var(--accent);
+}
+
+.Card:hover::before {
+  left: -10px;
+  box-shadow: 170px 0 var(--accent);
+}
+
+.Card:hover::after {
+  top: -10px;
+  box-shadow: 0 170px var(--accent);
+}
+@media only screen and (max-width: 600px) {
+  .CardCon{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 15px;*/
+    width: 90%;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-self: center;
+    overflow:auto;
+    margin-top: 10px;
+}
+}

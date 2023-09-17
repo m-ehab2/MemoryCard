@@ -1,0 +1,21 @@
+#root{
+    background-color: var(--background);
+}
+:root{
+--text: #000000;
+--background: #ffffff;
+--primary: #059494;
+--secondary: #b7e1e1;
+--accent: #3b6691;
+}
+*{
+    color: var(--text);
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(/src/assets/Fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Assistant';
+    src: url(assets/Fonts/Assistant-Medium.ttf);
+}
